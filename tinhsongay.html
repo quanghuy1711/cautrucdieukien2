@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>KIỂM TRA SỐ NGÀY TRONG THÁNG</h2>
+    <input type="number" placeholder="Nhập số ngày" id="thang">
+    <label for="nhap"><button onclick="checkday()">Tính số ngày</button></label>
+    <p id="day"></p>
+</body>
+<script>
+    let thang1 = "1";
+    let thang2 = "2";
+    let thang3 = "3";
+    let thang4 = "4";
+    let thang5 = "5";
+    let thang6 = "6";
+    let thang7 = "7";
+    let thang8 = "8";
+    let thang9 = "9";
+    let thang10 = "10";
+    let thang11 = "11";
+    let thang12 = "12";
+    function checkday() {
+        let thang = document.getElementById("thang").value;
+        switch (thang) {
+            case thang1:
+            case thang3:
+            case thang5:
+            case thang7:
+            case thang8:
+            case thang10:
+            case thang12:
+                document.getElementById('day').innerHTML = 'tháng' + thang + "có 31 ngày"
+                break;
+            case thang4:
+            case thang6:
+            case thang9:
+            case thang11:
+                document.getElementById('day').innerHTML = 'tháng' + thang + "có 30 ngày"
+                break;
+            case thang2:
+                document.getElementById('day').innerHTML = 'tháng' + thang + "có 28 hoặc 29 ngày"
+                break;
+        }
+    }
+
+</script>
+
+</html>
