@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>nhap tuoi</label>
+        <input type="number" id="tuoi" placeholder=" nhập tuoi"><br>
+        <button onclick="check()">Check</button>
+      </form>
+      <script>
+        function check() {
+          let age =parseFloat(document.getElementById("tuoi").value);
+          if (age > 0 && age <= 120) {
+            alert("day la tuoi cua con nguoi: "+age +"tuoi");
+          }else {
+            alert("day khong phai la tuoi cua nguoi");
+          }
+        }
+      </script>
+</body>
+</html>
