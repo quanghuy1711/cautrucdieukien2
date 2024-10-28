@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a =+prompt("nhập a: ");
+        let b =+prompt("nhập b: ");
+        let c =+prompt("nhập c: ");
+        let delta = b*b-4*a*c;
+        console.log("delta: "+delta);
+        if (delta<0) {
+          console.log("phuong trinh vo nghiem");
+        }else if (delta === 0) {
+          let x = -b / (2*a);
+          console.log( "Phương trình có nghiệm kép: x = " + x);
+        }else {
+          let bienX1 = (-b + Math.sqrt(delta))/2*a;
+          let bienX2 = (-b - Math.sqrt(delta))/2*a;
+          console.log("biến x1 có giá trị là: "+bienX1);
+          console.log("biến x2 có giá trị là: "+bienX2);
+        }
+        </script>
+</body>
+</html>
